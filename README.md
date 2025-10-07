@@ -1,13 +1,13 @@
 # Simulación de AIOps y Auto-Remediación con Prometheus
 
-Este proyecto demuestra un flujo completo de monitoreo, alerta y auto-remediación utilizando Docker, Prometheus, Alertmanager y un webhook personalizado en Python. [cite_start]El objetivo es simular el comportamiento de una plataforma AIOps que detecta incidentes, los agrupa y genera acciones automáticas de respuesta. [cite: 6, 7]
+Este proyecto demuestra un flujo completo de monitoreo, alerta y auto-remediación utilizando Docker, Prometheus, Alertmanager y un webhook personalizado en Python. El objetivo es simular el comportamiento de una plataforma AIOps que detecta incidentes, los agrupa y genera acciones automáticas de respuesta.
 
 ## 🎯 Conceptos Clave Demostrados
 
 -   **Detección de Incidentes**: Prometheus monitorea activamente los servicios y genera alertas basadas en reglas predefinidas.
--   [cite_start]**Enrutamiento y Agrupación**: Alertmanager recibe las alertas, las de-duplica para evitar "ruido" y las enruta al canal de notificación correcto. [cite: 6]
--   [cite_start]**Acción Automática (Auto-Remediación)**: Un webhook en Python recibe la notificación y ejecuta una lógica predefinida (un "runbook"), simulando una acción correctiva. [cite: 4]
--   [cite_start]**Reducción de Tiempos (MTTR)**: Se visualiza cómo la automatización disminuye drásticamente el tiempo entre la detección de un problema y la ejecución de una primera acción de respuesta. [cite: 51]
+-   **Enrutamiento y Agrupación**: Alertmanager recibe las alertas, las de-duplica para evitar "ruido" y las enruta al canal de notificación correcto.
+-   **Acción Automática (Auto-Remediación)**: Un webhook en Python recibe la notificación y ejecuta una lógica predefinida (un "runbook"), simulando una acción correctiva.
+-   **Reducción de Tiempos (MTTR)**: Se visualiza cómo la automatización disminuye drásticamente el tiempo entre la detección de un problema y la ejecución de una primera acción de respuesta.
 
 ## 📂 Estructura del Proyecto
 
