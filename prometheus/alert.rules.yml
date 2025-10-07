@@ -1,0 +1,19 @@
+groups:
+- name: general.rules
+  rules:
+  - alert: PrometheusTargetMissing
+    expr: up{job="prometheus"} == 0
+    for: 10s
+    labels:
+      severity: 'critical'
+    annotations:
+      summary: "Prometheus target missing"
+      description: "El objetivo de Prometheus ha desaparecido. El servicio podría estar inactivo."
+  - alert: FakeServiceDown
+    expr: up{job="fake_service"} == 0
+    for: 10s
+    labels:
+      severity: 'warning'
+    annotations:
+      summary: "El servicio falso está caído"
+      description: "El servicio 'fake_service' no responde como se esperaba."
